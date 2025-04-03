@@ -144,6 +144,13 @@ function Login() {
           </div>
         </div>
       </div>
+      {/* Footer */}
+  <div className="absolute bottom-2 right-2 text-sm text-gray-500">
+    ~ by Arnab Bhowmik 
+    <br />
+    &
+    Ishika Bhoyar
+  </div>
     </div>
   );
 }
