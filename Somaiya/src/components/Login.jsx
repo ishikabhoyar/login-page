@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Eye, Mail } from 'lucide-react';
 import Bg from '../assets/BG-login(2).jpg';
 import logo from '../assets/KJSCE.png';
+import logo1 from '../assets/university.png';
+import Bottom from '../assets/Bottom.png';
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -30,12 +32,13 @@ function Login() {
         <div className="w-full max-w-md">
           {/* Logos */}
           <div className="flex justify-center gap-4 mb-8">
+            <img src={logo1} alt="KJSCE" className="h-12" />
             <img src={logo} alt="Somaiya Vidyavihar" className="h-12" />
           </div>
 
           {/* Title */}
           <h1 className="text-2xl font-bold text-center text-gray-800 mb-2">
-            Welcome to Somaiya MyAccount Portal
+            Welcome To Monaco Editor
           </h1>
           <p className="text-center text-gray-600 mb-8">
             Please enter your SVV Net ID & password to Login.
@@ -134,7 +137,7 @@ function Login() {
           {/* Trust Logo */}
           <div className="mt-8 flex justify-end">
             <img 
-              src="https://www.somaiya.edu/assets/somaiya/distV2/img/somaiya-trust.svg" 
+              src={Bottom} 
               alt="Somaiya Trust" 
               className="h-8"
             />
