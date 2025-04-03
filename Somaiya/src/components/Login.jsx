@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Eye, Mail } from 'lucide-react';
 import Bg from '../assets/BG-login(2).jpg';
-
+import logo from '../assets/KJSCE.png';
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -30,8 +30,7 @@ function Login() {
         <div className="w-full max-w-md">
           {/* Logos */}
           <div className="flex justify-center gap-4 mb-8">
-            <img src="https://www.somaiya.edu/assets/somaiya/distV2/img/somaiya-logo.svg" alt="Somaiya Vidyavihar" className="h-12" />
-            <img src="https://www.somaiya.edu/assets/kjsit/dist/img/KJSIT-Logo.svg" alt="Somaiya University" className="h-12" />
+            <img src={logo} alt="Somaiya Vidyavihar" className="h-12" />
           </div>
 
           {/* Title */}
